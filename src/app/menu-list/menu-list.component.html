@@ -1,0 +1,23 @@
+<h2> Menu List </h2>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th> Menu Name </th>
+            <th> Amount </th>
+            <th> End Date </th>
+            <th> Strock </th>
+            <th> Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor = "let menu of menus">
+            <td> {{menu.dishName}} </td>
+            <td> {{menu.amount}} </td>
+            <td> {{menu.endDate}} </td>
+            <td> {{menu.stock}} </td>
+            <td>
+                <button (click) = "updateMenu(menu.id)" class="btn btn-info"> Update </button>
+            </td>
+        </tr>
+    </tbody>
+</table>

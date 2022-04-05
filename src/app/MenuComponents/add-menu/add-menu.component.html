@@ -1,0 +1,46 @@
+<div class="col-md-6 offset-md-3">
+    <h3> Add Menu </h3>
+    <form (ngSubmit) = "onSubmit()">
+
+        <div>
+            <label> Menu Name </label>
+            <input type="text" class="form-control" id="dishName"  [(ngModel)] = "menu.dishName" name="dishName">
+        </div>
+
+        <div>
+            <label> Amount </label>
+            <input type="text" class="form-control" id="amount"  [(ngModel)] = "menu.amount" name="amount">
+        </div>
+
+        <div>
+            <label> Stock </label>
+            <input type="text" class="form-control" id="stock"  [(ngModel)] = "menu.stock" name="stock">
+        </div>
+
+        <div>
+            <label> Start Date </label>
+            <input type="text" class="form-control" id="startDate"  [(ngModel)] = "menu.startDate" name="startDate">
+        </div>
+
+        <div>
+            <label> End Date </label>
+            <input type="text" class="form-control" id="endDate"  [(ngModel)] = "menu.endDate" name="endDate">
+        </div>
+
+        <div>
+            <label> Menu Availability </label>
+            <input type="text" class="form-control" id="available"  [(ngModel)] = "menu.available" name="available">
+        </div>
+
+        <div>
+            <label> Menu Image Link </label>
+            <input type="text" class="form-control" id="imageLink"  [(ngModel)] = "menu.imageLink" name="imageLink">
+        </div>
+
+        <div>
+            <br>
+            <button class="btn btn-success" id="add-menu-form" type="submit"> Submit </button>
+        </div>
+
+    </form>
+</div>
